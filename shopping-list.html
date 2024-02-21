@@ -48,6 +48,9 @@
             span.textContent = olditem;
             button.textContent = "Delete";
             ul.appendChild(li); 
+            button.addEventListener('click', () => {
+                event.target.closest('li').remove();
+            })
         })
 
 
